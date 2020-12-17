@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Memory Game</title>
+</head>
+
+<body>
+    <!--Gallery for Cards-->
+    <div id="gallery">
+        <!--Each card has a container, wich includes a div with reverse side of the card.
+          In this reverseSide-class-div is image for the card-->
+        <div id="container1" class="shuffleMe">
+            <div id="reverseSide1" onClick="toggle(id)" class="reverseSide"><img src="Images/alpaca.jpg" alt="alpaca" class="imageHidden" id="img1"></div>
+        </div>
+        <div id="container2" class="shuffleMe">
+            <div id="reverseSide2" onClick="toggle(id)" class="reverseSide"><img src="Images/jellyfish.jpg" alt="jellyfish" class="imageHidden" id="img2"></div>
+        </div>
+        <div id="container3" class="shuffleMe">
+            <div id="reverseSide3" onClick="toggle(id)" class="reverseSide"><img src="Images/redpanda.jpg" alt="redpanda" class="imageHidden" id="img3"></div>
+        </div>
+        <div id="container4" class="shuffleMe">
+            <div id="reverseSide4" onClick="toggle(id)" class="reverseSide"><img src="Images/chameleon.jpg" alt="chameleon" class="imageHidden" id="img4"></div>
+        </div>
+        <div id="container5" class="shuffleMe">
+            <div id="reverseSide5" onClick="toggle(id)" class="reverseSide"><img src="Images/gentoo penguins.jpg" alt="gentoopenguins" class="imageHidden"
+                    id="img5"></div>
+        </div>
+        <div id="container6" class="shuffleMe">
+            <div id="reverseSide6" onClick="toggle(id)" class="reverseSide"><img src="Images/alpaca.jpg" alt="alpaca" class="imageHidden" id="img6"></div>
+        </div>
+        <div id="container7" class="shuffleMe">
+            <div id="reverseSide7" onClick="toggle(id)" class="reverseSide"><img src="Images/jellyfish.jpg" alt="jellyfish" class="imageHidden" id="img7"></div>
+        </div>
+        <div id="container8" class="shuffleMe">
+            <div id="reverseSide8" onClick="toggle(id)" class="reverseSide"><img src="Images/redpanda.jpg" alt="redpanda" class="imageHidden" id="img8"></div>
+        </div>
+        <div id="container9" class="shuffleMe">
+            <div id="reverseSide9" onClick="toggle(id)" class="reverseSide"><img src="Images/chameleon.jpg" alt="chameleon" class="imageHidden" id="img9"></div>
+        </div>
+        <div id="container10" class="shuffleMe">
+            <div id="reverseSide10" onClick="toggle(id)" class="reverseSide"><img src="Images/gentoo penguins.jpg" alt="gentoopenguins" class="imageHidden"
+                    id="img10"></div>
+        </div>
+    </div>
+    <p>Shuffle To Start The Game</p>
+    <br>
+    <div id="containerForShuffleButton"><button id="shuffleButton">Shuffle Cards</button></div>
+    <div class="containerForScores">
+        <label for="Scores" class="label">Scores:</label>
+        <input type="text" id="inputScores" value="">
+        <label for="Attempts" class="attempts">Failed attempts:</label>
+        <input type="text" id="inputAttempts" value="">
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

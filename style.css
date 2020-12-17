@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#gallery {
+  margin: auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-column-gap: 5px;
+  grid-row-gap: 2.5px;
+}
+#gallery img {
+  width: 100%;
+}
+/* When the game begins, images are hidden. */
+.imageHidden {
+  visibility: hidden;
+}
+
+/*When clicking a card, we remove the imageHidden-class and add imageVisible-class*/
+.imageVisible {
+  visibility: visible;
+  z-index: 9;
+}
+
+p {
+  text-align: center;
+  font-family: "Nerko One", cursive;
+  font-size: 40px;
+}
+#shuffleButton {
+  margin: 0px;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: "Nerko One", cursive;
+  background-color: #ed0588;
+  color: white;
+  font-size: 30px;
+  width: 200px;
+  border-radius: 5px;
+  border-style: none;
+}
+#shuffleButton:hover {
+  background-color: #f955b2;
+}
+#containerForShuffleButton {
+  height: 30px;
+  position: relative;
+}
+
+#reverseSide1,
+#reverseSide2,
+#reverseSide3,
+#reverseSide4,
+#reverseSide5,
+#reverseSide6,
+#reverseSide7,
+#reverseSide8,
+#reverseSide9,
+#reverseSide10 {
+  width: 100%;
+  height: 98.5%;
+  background-color: #fb80c6;
+}
+.containerForScores {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  text-align: center;
+}
+.label,
+.attempts {
+  font-family: "Nerko One", cursive;
+  font-size: 20px;
+}
